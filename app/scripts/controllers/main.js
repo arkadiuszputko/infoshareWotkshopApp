@@ -8,7 +8,7 @@
  * Controller of the infoshareWotkshopApp
  */
 angular.module('infoshareWotkshopApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($stamplay) {
     this.awesomeThings = [
       {
       	name: 'HTML5 Boilerplate',
@@ -25,6 +25,9 @@ angular.module('infoshareWotkshopApp')
     ];
 
     this.addAwesomeThing = function () {
-    	this.awesomeThings.push(this.awesomeThing);
-    }
+    	$stamplay.Object('awesomething').save(this.awesomeThing)
+    		.then(function (data) {
+    			console.log(data);
+    		});
+    };
   });
