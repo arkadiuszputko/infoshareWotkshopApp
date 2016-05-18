@@ -8,11 +8,14 @@
  *
  * Main module of the application.
  */
+Stamplay.init('infosharewotkshopapp');
+
 angular
   .module('infoshareWotkshopApp', [
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'ngStamplay'
   ])
   .config(function ($routeProvider) {
     $routeProvider
