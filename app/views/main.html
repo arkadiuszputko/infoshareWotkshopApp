@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+<form name="addAwesomeThing" ng-submit="main.addAwesomeThing()">
+  <input type="text" ng-model="main.awesomeThing.name" /><br />
+  <textarea ng-model="main.awesomeThing.description"></textarea><br />
+  <button type="submit">Add awesome thing</button><br />
+</form>
+
+<input ng-model="main.filter" />
+
+<ul class="awesome-things">
+  <li ng-repeat="awesomeThing in main.awesomeThings | filter:main.filter">
+    <h4>{{awesomeThing.name}}</h4>
+    <p>{{awesomeThing.description}}</p>
+  </li>
+</ul>
