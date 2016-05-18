@@ -24,6 +24,11 @@ module.exports = function(config) {
       'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
+      'bower_components/underscore/underscore.js',
+      'bower_components/store.js/store.js',
+      'bower_components/q/q.js',
+      'bower_components/stamplay-js-sdk/dist/stamplay.js',
+      'bower_components/angular-stamplay/angular-stamplay.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
